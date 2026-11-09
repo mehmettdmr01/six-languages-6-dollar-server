@@ -1,6 +1,6 @@
 # Which language can handle the most users on a $6 server?
 
-Video: (link coming)
+Video: https://youtu.be/OLdqhbKNOCs
 
 The same small notes API in six languages, each run **the way its framework's own docs run it, with no tuning**, on the
 same DigitalOcean **$6/month server (1 vCPU, 1 GB RAM)**. Simulated users (each clicks every 5-15 seconds) ramp up over
