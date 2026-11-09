@@ -1,0 +1,42 @@
+{
+ "name": "python-fastapi",
+ "tier": "v8",
+ "score": 2000,
+ "status": "scored",
+ "test_passed": true,
+ "hidden_passed": true,
+ "capped": false,
+ "knee": 3333,
+ "history": [
+  [
+   "ramp",
+   25000,
+   3333
+  ],
+  [
+   "hold",
+   3000,
+   false
+  ],
+  [
+   "hold",
+   2700,
+   false
+  ],
+  [
+   "hold",
+   2400,
+   false
+  ],
+  [
+   "hold",
+   2200,
+   false
+  ],
+  [
+   "hold",
+   2000,
+   true
+  ]
+ ]
+}

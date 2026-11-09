@@ -1,0 +1,305 @@
+[
+ {
+  "run": "00-ramp-25000",
+  "kind": "ramp",
+  "users": 25000,
+  "ramp_s": 300,
+  "hold_s": 1,
+  "passed": false,
+  "why": "errors",
+  "alive": true,
+  "k6": {
+   "p95": 26696.339663,
+   "p99": 54858.6914196,
+   "err": 0.4016789087093389,
+   "rps": 454.21864458468065,
+   "requests": 143546,
+   "created": 8806
+  },
+  "new_rows": 8807,
+  "box": {
+   "samples": 320,
+   "min_mem_avail_mb": 519.0,
+   "peak_app_mb": 158.0,
+   "peak_app_anon_mb": 79.0,
+   "peak_tcp": 3851.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 0.0,
+   "mean_steal": 1.3,
+   "mean_iowait": 0.0
+  },
+  "generators": [
+   {
+    "min_free_mb": 5903,
+    "min_idle": 75,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 5976,
+    "min_idle": 75,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": false,
+  "kernel": [
+   "Nov 09 05:41:29 hedef kernel: TCP: request_sock_TCP: Possible SYN flooding on port 0.0.0.0:80. Sending cookies."
+  ],
+  "t0": 1794202699.522222,
+  "ramp_start": 1794202703.161,
+  "seconds": 322,
+  "knee": 3333,
+  "generator_window_end": 1794202773.157
+ },
+ {
+  "run": "01-hold-3000",
+  "kind": "hold",
+  "users": 3000,
+  "ramp_s": 60,
+  "hold_s": 300,
+  "passed": false,
+  "why": "p95",
+  "alive": true,
+  "k6": {
+   "p95": 1870.5930137000003,
+   "p99": 4068.7817929600014,
+   "err": 2.0779220779220778e-05,
+   "rps": 256.97590768515374,
+   "requests": 96368,
+   "created": 9612
+  },
+  "new_rows": 9614,
+  "box": {
+   "samples": 376,
+   "min_mem_avail_mb": 563.0,
+   "peak_app_mb": 142.0,
+   "peak_app_anon_mb": 76.0,
+   "peak_tcp": 2095.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 4.4,
+   "mean_steal": 1.3,
+   "mean_iowait": 0.2
+  },
+  "generators": [
+   {
+    "min_free_mb": 7246,
+    "min_idle": 73,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 7290,
+    "min_idle": 74,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": false,
+  "kernel": [],
+  "t0": 1794203024.2315469,
+  "ramp_start": 1794203025.045,
+  "seconds": 378,
+  "generator_window_end": null
+ },
+ {
+  "run": "02-hold-2700",
+  "kind": "hold",
+  "users": 2700,
+  "ramp_s": 60,
+  "hold_s": 300,
+  "passed": false,
+  "why": "p95",
+  "alive": true,
+  "k6": {
+   "p95": 1103.5285996,
+   "p99": 1692.7925576400003,
+   "err": 0,
+   "rps": 237.4681206537491,
+   "requests": 89050,
+   "created": 9011
+  },
+  "new_rows": 9011,
+  "box": {
+   "samples": 376,
+   "min_mem_avail_mb": 564.0,
+   "peak_app_mb": 145.0,
+   "peak_app_anon_mb": 75.0,
+   "peak_tcp": 1692.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 8.8,
+   "mean_steal": 1.1,
+   "mean_iowait": 0.5
+  },
+  "generators": [
+   {
+    "min_free_mb": 7278,
+    "min_idle": 72,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 7343,
+    "min_idle": 74,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": false,
+  "kernel": [],
+  "t0": 1794203406.8858993,
+  "ramp_start": 1794203408.127,
+  "seconds": 377,
+  "generator_window_end": null
+ },
+ {
+  "run": "03-hold-2400",
+  "kind": "hold",
+  "users": 2400,
+  "ramp_s": 60,
+  "hold_s": 300,
+  "passed": false,
+  "why": "p95",
+  "alive": true,
+  "k6": {
+   "p95": 4393.785314999998,
+   "p99": 5131.50015518,
+   "err": 5.305039787798409e-05,
+   "rps": 201.6727402177914,
+   "requests": 75624,
+   "created": 7499
+  },
+  "new_rows": 7500,
+  "box": {
+   "samples": 376,
+   "min_mem_avail_mb": 572.0,
+   "peak_app_mb": 138.0,
+   "peak_app_anon_mb": 73.0,
+   "peak_tcp": 1766.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 8.2,
+   "mean_steal": 5.6,
+   "mean_iowait": 0.5
+  },
+  "generators": [
+   {
+    "min_free_mb": 7338,
+    "min_idle": 74,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 7367,
+    "min_idle": 71,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [],
+  "t0": 1794203787.2172742,
+  "ramp_start": 1794203787.929,
+  "seconds": 377,
+  "generator_window_end": null
+ },
+ {
+  "run": "04-hold-2200",
+  "kind": "hold",
+  "users": 2200,
+  "ramp_s": 60,
+  "hold_s": 300,
+  "passed": false,
+  "why": "p95",
+  "alive": true,
+  "k6": {
+   "p95": 1064.7187887999996,
+   "p99": 1945.1596607999984,
+   "err": 0,
+   "rps": 193.88599636917735,
+   "requests": 72707,
+   "created": 7251
+  },
+  "new_rows": 7251,
+  "box": {
+   "samples": 376,
+   "min_mem_avail_mb": 573.0,
+   "peak_app_mb": 139.0,
+   "peak_app_anon_mb": 71.0,
+   "peak_tcp": 1414.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 13.4,
+   "mean_steal": 2.9,
+   "mean_iowait": 0.8
+  },
+  "generators": [
+   {
+    "min_free_mb": 7378,
+    "min_idle": 75,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 7397,
+    "min_idle": 77,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": false,
+  "kernel": [],
+  "t0": 1794204167.752934,
+  "ramp_start": 1794204168.435,
+  "seconds": 378,
+  "generator_window_end": null
+ },
+ {
+  "run": "05-hold-2000",
+  "kind": "hold",
+  "users": 2000,
+  "ramp_s": 60,
+  "hold_s": 300,
+  "passed": true,
+  "why": null,
+  "alive": true,
+  "k6": {
+   "p95": 878.2498569499987,
+   "p99": 2096.99786865,
+   "err": 3.0264511833424128e-05,
+   "rps": 176.35212474142492,
+   "requests": 66131,
+   "created": 6511
+  },
+  "new_rows": 6511,
+  "box": {
+   "samples": 376,
+   "min_mem_avail_mb": 572.0,
+   "peak_app_mb": 137.0,
+   "peak_app_anon_mb": 69.0,
+   "peak_tcp": 1285.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 17.0,
+   "mean_steal": 3.8,
+   "mean_iowait": 0.9
+  },
+  "generators": [
+   {
+    "min_free_mb": 7252,
+    "min_idle": 61,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 7071,
+    "min_idle": 57,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [],
+  "t0": 1794204549.3298554,
+  "ramp_start": 1794204549.977,
+  "seconds": 378,
+  "generator_window_end": null
+ }
+]

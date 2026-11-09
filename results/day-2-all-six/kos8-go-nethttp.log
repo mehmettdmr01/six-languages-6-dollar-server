@@ -1,0 +1,4 @@
+00-ramp-25000 knee 15000 oom {'samples': 313, 'min_mem_avail_mb': 11.0, 'peak_app_mb': 663.0, 'peak_app_anon_mb': 655.0, 'peak_tcp': 6.0, 'peak_conntrack': 0.0, 'mean_idle': 69.9, 'mean_steal': 5.5, 'mean_iowait': 1.1}
+01-hold-13500 FAIL oom {'p95': 686.1447680999999, 'p99': 30270.111477520004, 'err': 0.7839292021696109, 'rps': 1102.3058631466588, 'requests': 413392, 'created': 8356} {'samples': 353, 'min_mem_avail_mb': 0.0, 'peak_app_mb': 736.0, 'peak_app_anon_mb': 650.0, 'peak_tcp': 6.0, 'peak_conntrack': 0.0, 'mean_idle': 86.0, 'mean_steal': 3.2, 'mean_iowait': 0.4}
+02-hold-12200 PASS {'p95': 206.00833469999753, 'p99': 2301.2740776800015, 'err': 0.0028982364132845695, 'rps': 1082.949798402325, 'requests': 406117, 'created': 39425} {'samples': 380, 'min_mem_avail_mb': 21.0, 'peak_app_mb': 697.0, 'peak_app_anon_mb': 635.0, 'peak_tcp': 5.0, 'peak_conntrack': 0.0, 'mean_idle': 44.6, 'mean_steal': 2.4, 'mean_iowait': 3.0}
+SCORE go-nethttp v8 12200

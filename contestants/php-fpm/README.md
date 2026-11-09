@@ -1,0 +1,2 @@
+# php-fpm
+Plain PHP 8.3 with PDO SQLite behind nginx and PHP-FPM, Ubuntu 24.04 packages with their default settings: `start.sh` copies Ubuntu's own `nginx.conf` and FPM `www.conf` and changes only the file paths (so it can run as the benchmark user) and the site block, which is the PHP snippet from Ubuntu's default site. That keeps nginx's `worker_connections 768`, its access log, and FPM's `pm = dynamic` with `pm.max_children = 5`. FPM clears the environment by default, so the pool passes `SQLITE_PATH` through with `env[...]`.

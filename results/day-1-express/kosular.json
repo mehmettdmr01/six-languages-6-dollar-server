@@ -1,0 +1,107 @@
+[
+ {
+  "run": "00-ramp-25000",
+  "kind": "ramp",
+  "users": 25000,
+  "ramp_s": 300,
+  "hold_s": 1,
+  "passed": true,
+  "why": null,
+  "alive": true,
+  "k6": {
+   "p95": 696.2337235,
+   "p99": 3605.93551745,
+   "err": 0.0023549584959442382,
+   "rps": 1139.6375734260325,
+   "requests": 360157,
+   "created": 35848
+  },
+  "new_rows": 35924,
+  "box": {
+   "samples": 320,
+   "min_mem_avail_mb": 378.0,
+   "peak_app_mb": 334.0,
+   "peak_app_anon_mb": 225.0,
+   "peak_tcp": 12468.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 18.4,
+   "mean_steal": 1.5,
+   "mean_iowait": 4.2
+  },
+  "generators": [
+   {
+    "min_free_mb": 4935,
+    "min_idle": 39,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 5045,
+    "min_idle": 56,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": false,
+  "kernel": [
+   "Nov 08 19:57:35 hedef kernel: TCP: request_sock_TCP: Possible SYN flooding on port 0.0.0.0:80. Sending cookies."
+  ],
+  "t0": 1794167602.5900948,
+  "ramp_start": 1794167606.329,
+  "seconds": 321,
+  "knee": 17500,
+  "generator_window_end": 1794167846.329
+ },
+ {
+  "run": "01-hold-15800",
+  "kind": "hold",
+  "users": 15800,
+  "ramp_s": 60,
+  "hold_s": 300,
+  "passed": true,
+  "why": null,
+  "alive": true,
+  "k6": {
+   "p95": 327.3618960999999,
+   "p99": 653.9301720599993,
+   "err": 4.951984793597465e-05,
+   "rps": 1399.8566927606796,
+   "requests": 525016,
+   "created": 52334
+  },
+  "new_rows": 52335,
+  "box": {
+   "samples": 380,
+   "min_mem_avail_mb": 414.0,
+   "peak_app_mb": 415.0,
+   "peak_app_anon_mb": 200.0,
+   "peak_tcp": 10245.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 12.0,
+   "mean_steal": 2.8,
+   "mean_iowait": 2.1
+  },
+  "generators": [
+   {
+    "min_free_mb": 5428,
+    "min_idle": 31,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 5598,
+    "min_idle": 56,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": false,
+  "kernel": [
+   "Nov 08 20:00:05 hedef kernel: TCP: request_sock_TCP: Possible SYN flooding on port 0.0.0.0:80. Sending cookies."
+  ],
+  "t0": 1794167925.4862056,
+  "ramp_start": 1794167927.863,
+  "seconds": 381,
+  "generator_window_end": null
+ }
+]

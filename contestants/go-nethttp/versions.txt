@@ -1,0 +1,2 @@
+go version go1.22.2 linux/amd64
+require github.com/mattn/go-sqlite3 v1.14.22

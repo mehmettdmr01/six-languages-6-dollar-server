@@ -1,0 +1,2 @@
+# python-fastapi
+FastAPI run the way its docs show (`fastapi run`, one worker, uvicorn underneath), Python's own sqlite3, a connection per request through a `Depends` dependency (the docs' pattern, with `check_same_thread=False` as the docs say). Plain SQL, no ORM, no tuning. The POST handler reads the raw body itself because the spec wants the token checked before the JSON is parsed. Versions in `versions.txt` after the build.

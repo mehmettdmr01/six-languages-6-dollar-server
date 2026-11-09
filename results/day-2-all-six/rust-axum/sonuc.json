@@ -1,0 +1,32 @@
+{
+ "name": "rust-axum",
+ "tier": "v8",
+ "score": 17600,
+ "status": "scored",
+ "test_passed": true,
+ "hidden_passed": true,
+ "capped": false,
+ "knee": 21666,
+ "history": [
+  [
+   "ramp",
+   25000,
+   null
+  ],
+  [
+   "ramp",
+   50000,
+   21666
+  ],
+  [
+   "hold",
+   19500,
+   false
+  ],
+  [
+   "hold",
+   17600,
+   true
+  ]
+ ]
+}

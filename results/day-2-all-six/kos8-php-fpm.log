@@ -1,0 +1,4 @@
+00-ramp-25000 knee 6666 errors {'samples': 324, 'min_mem_avail_mb': 622.0, 'peak_app_mb': 159.0, 'peak_app_anon_mb': 15.0, 'peak_tcp': 879.0, 'peak_conntrack': 0.0, 'mean_idle': 3.6, 'mean_steal': 3.6, 'mean_iowait': 0.5}
+01-hold-6000 FAIL errors {'p95': 766.7811526999981, 'p99': 1050.865713399999, 'err': 0.033271422117363586, 'rps': 530.8279133254123, 'requests': 199065, 'created': 19478} {'samples': 376, 'min_mem_avail_mb': 637.0, 'peak_app_mb': 133.0, 'peak_app_anon_mb': 14.0, 'peak_tcp': 756.0, 'peak_conntrack': 0.0, 'mean_idle': 9.7, 'mean_steal': 5.1, 'mean_iowait': 1.9}
+02-hold-5400 PASS {'p95': 282.52395349999995, 'p99': 843.2104400000006, 'err': 0.005600132809473742, 'rps': 481.465832848842, 'requests': 180551, 'created': 18066} {'samples': 376, 'min_mem_avail_mb': 638.0, 'peak_app_mb': 114.0, 'peak_app_anon_mb': 14.0, 'peak_tcp': 723.0, 'peak_conntrack': 0.0, 'mean_idle': 17.1, 'mean_steal': 3.1, 'mean_iowait': 2.7}
+SCORE php-fpm v8 5400

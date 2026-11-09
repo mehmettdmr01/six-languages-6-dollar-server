@@ -1,0 +1,22 @@
+{
+ "name": "java-spring",
+ "tier": "v8",
+ "score": 6800,
+ "status": "scored",
+ "test_passed": true,
+ "hidden_passed": true,
+ "capped": false,
+ "knee": 7500,
+ "history": [
+  [
+   "ramp",
+   25000,
+   7500
+  ],
+  [
+   "hold",
+   6800,
+   true
+  ]
+ ]
+}

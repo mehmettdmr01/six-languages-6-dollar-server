@@ -1,0 +1,22 @@
+{
+ "name": "node-express-tutorial",
+ "tier": "v8",
+ "score": 15800,
+ "status": "scored",
+ "test_passed": true,
+ "hidden_passed": true,
+ "capped": false,
+ "knee": 17500,
+ "history": [
+  [
+   "ramp",
+   25000,
+   17500
+  ],
+  [
+   "hold",
+   15800,
+   true
+  ]
+ ]
+}

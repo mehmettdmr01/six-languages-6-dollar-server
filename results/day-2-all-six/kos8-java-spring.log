@@ -1,0 +1,3 @@
+00-ramp-25000 knee 7500 errors {'samples': 324, 'min_mem_avail_mb': 247.0, 'peak_app_mb': 531.0, 'peak_app_anon_mb': 390.0, 'peak_tcp': 5.0, 'peak_conntrack': 0.0, 'mean_idle': 17.8, 'mean_steal': 10.3, 'mean_iowait': 1.9}
+01-hold-6800 PASS {'p95': 14.765345399999996, 'p99': 43.38452629999996, 'err': 0, 'rps': 607.4526547923144, 'requests': 227800, 'created': 22718} {'samples': 376, 'min_mem_avail_mb': 310.0, 'peak_app_mb': 553.0, 'peak_app_anon_mb': 343.0, 'peak_tcp': 5.0, 'peak_conntrack': 0.0, 'mean_idle': 38.5, 'mean_steal': 5.2, 'mean_iowait': 3.5}
+SCORE java-spring v8 6800

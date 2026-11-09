@@ -1,0 +1,155 @@
+[
+ {
+  "run": "00-ramp-25000",
+  "kind": "ramp",
+  "users": 25000,
+  "ramp_s": 300,
+  "hold_s": 1,
+  "passed": false,
+  "why": "errors",
+  "alive": true,
+  "k6": {
+   "p95": 715.9102951000002,
+   "p99": 1046.75495256,
+   "err": 0.5298977947390799,
+   "rps": 1204.4752840652677,
+   "requests": 380668,
+   "created": 17821
+  },
+  "new_rows": 17884,
+  "box": {
+   "samples": 324,
+   "min_mem_avail_mb": 622.0,
+   "peak_app_mb": 159.0,
+   "peak_app_anon_mb": 15.0,
+   "peak_tcp": 879.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 3.6,
+   "mean_steal": 3.6,
+   "mean_iowait": 0.5
+  },
+  "generators": [
+   {
+    "min_free_mb": 5315,
+    "min_idle": 43,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 5444,
+    "min_idle": 66,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [
+   "Nov 09 06:20:51 hedef kernel: TCP: request_sock_TCP: Possible SYN flooding on port 0.0.0.0:80. Sending cookies."
+  ],
+  "t0": 1794204939.7217634,
+  "ramp_start": 1794204944.718,
+  "seconds": 326,
+  "knee": 6666,
+  "generator_window_end": 1794205054.71
+ },
+ {
+  "run": "01-hold-6000",
+  "kind": "hold",
+  "users": 6000,
+  "ramp_s": 60,
+  "hold_s": 300,
+  "passed": false,
+  "why": "errors",
+  "alive": true,
+  "k6": {
+   "p95": 766.7811526999981,
+   "p99": 1050.865713399999,
+   "err": 0.033271422117363586,
+   "rps": 530.8279133254123,
+   "requests": 199065,
+   "created": 19478
+  },
+  "new_rows": 19478,
+  "box": {
+   "samples": 376,
+   "min_mem_avail_mb": 637.0,
+   "peak_app_mb": 133.0,
+   "peak_app_anon_mb": 14.0,
+   "peak_tcp": 756.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 9.7,
+   "mean_steal": 5.1,
+   "mean_iowait": 1.9
+  },
+  "generators": [
+   {
+    "min_free_mb": 6876,
+    "min_idle": 70,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 6920,
+    "min_idle": 65,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [],
+  "t0": 1794205268.0636618,
+  "ramp_start": 1794205269.237,
+  "seconds": 377,
+  "generator_window_end": null
+ },
+ {
+  "run": "02-hold-5400",
+  "kind": "hold",
+  "users": 5400,
+  "ramp_s": 60,
+  "hold_s": 300,
+  "passed": true,
+  "why": null,
+  "alive": true,
+  "k6": {
+   "p95": 282.52395349999995,
+   "p99": 843.2104400000006,
+   "err": 0.005600132809473742,
+   "rps": 481.465832848842,
+   "requests": 180551,
+   "created": 18066
+  },
+  "new_rows": 18067,
+  "box": {
+   "samples": 376,
+   "min_mem_avail_mb": 638.0,
+   "peak_app_mb": 114.0,
+   "peak_app_anon_mb": 14.0,
+   "peak_tcp": 723.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 17.1,
+   "mean_steal": 3.1,
+   "mean_iowait": 2.7
+  },
+  "generators": [
+   {
+    "min_free_mb": 6936,
+    "min_idle": 66,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 6998,
+    "min_idle": 67,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [],
+  "t0": 1794205647.484266,
+  "ramp_start": 1794205648.562,
+  "seconds": 377,
+  "generator_window_end": null
+ }
+]

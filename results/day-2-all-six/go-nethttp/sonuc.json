@@ -1,0 +1,27 @@
+{
+ "name": "go-nethttp",
+ "tier": "v8",
+ "score": 12200,
+ "status": "scored",
+ "test_passed": true,
+ "hidden_passed": true,
+ "capped": false,
+ "knee": 15000,
+ "history": [
+  [
+   "ramp",
+   25000,
+   15000
+  ],
+  [
+   "hold",
+   13500,
+   false
+  ],
+  [
+   "hold",
+   12200,
+   true
+  ]
+ ]
+}

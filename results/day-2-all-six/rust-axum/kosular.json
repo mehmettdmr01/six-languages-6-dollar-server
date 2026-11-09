@@ -1,0 +1,208 @@
+[
+ {
+  "run": "00-ramp-25000",
+  "kind": "ramp",
+  "users": 25000,
+  "ramp_s": 300,
+  "hold_s": 1,
+  "passed": false,
+  "why": "p95",
+  "alive": true,
+  "k6": {
+   "p95": 2051.749833,
+   "p99": 2667.8135005,
+   "err": 0,
+   "rps": 1212.8062878428136,
+   "requests": 383290,
+   "created": 38600
+  },
+  "new_rows": 38604,
+  "box": {
+   "samples": 324,
+   "min_mem_avail_mb": 59.0,
+   "peak_app_mb": 644.0,
+   "peak_app_anon_mb": 561.0,
+   "peak_tcp": 24677.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 33.7,
+   "mean_steal": 3.1,
+   "mean_iowait": 2.9
+  },
+  "generators": [
+   {
+    "min_free_mb": 4842,
+    "min_idle": 63,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 4832,
+    "min_idle": 50,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [],
+  "t0": 1794207135.9009144,
+  "ramp_start": 1794207139.666,
+  "seconds": 325,
+  "knee": null,
+  "generator_window_end": null
+ },
+ {
+  "run": "01-ramp-50000",
+  "kind": "ramp",
+  "users": 50000,
+  "ramp_s": 300,
+  "hold_s": 1,
+  "passed": false,
+  "why": "oom",
+  "alive": false,
+  "k6": {
+   "p95": 5734.86659065,
+   "p99": 11513.784784860001,
+   "err": 0.708399001109878,
+   "rps": 2280.6869600707387,
+   "requests": 720948,
+   "created": 20109
+  },
+  "new_rows": 20114,
+  "box": {
+   "samples": 320,
+   "min_mem_avail_mb": 1.0,
+   "peak_app_mb": 689.0,
+   "peak_app_anon_mb": 635.0,
+   "peak_tcp": 29207.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 56.4,
+   "mean_steal": 8.5,
+   "mean_iowait": 1.3
+  },
+  "generators": [
+   {
+    "min_free_mb": 3466,
+    "min_idle": 51,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 3144,
+    "min_idle": 50,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [
+   "Nov 09 07:00:57 hedef kernel: python3 invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=0",
+   "Nov 09 07:00:57 hedef kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/system.slice/yarisma.service,task=server,pid=31359,uid=1000",
+   "Nov 09 07:00:57 hedef kernel: Out of memory: Killed process 31359 (server) total-vm:1400588kB, anon-rss:652288kB, file-rss:2304kB, shmem-rss:0kB, UID:1000 pgtables:1856kB oom_score_adj:0"
+  ],
+  "t0": 1794207462.3210738,
+  "ramp_start": 1794207468.47,
+  "seconds": 327,
+  "knee": 21666,
+  "generator_window_end": 1794207628.466
+ },
+ {
+  "run": "02-hold-19500",
+  "kind": "hold",
+  "users": 19500,
+  "ramp_s": 60,
+  "hold_s": 300,
+  "passed": false,
+  "why": "p95",
+  "alive": true,
+  "k6": {
+   "p95": 2158.7348734,
+   "p99": 3461.0563854100014,
+   "err": 0,
+   "rps": 1691.4593137924603,
+   "requests": 634352,
+   "created": 63485
+  },
+  "new_rows": 63486,
+  "box": {
+   "samples": 380,
+   "min_mem_avail_mb": 159.0,
+   "peak_app_mb": 591.0,
+   "peak_app_anon_mb": 467.0,
+   "peak_tcp": 19523.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 9.0,
+   "mean_steal": 9.3,
+   "mean_iowait": 2.1
+  },
+  "generators": [
+   {
+    "min_free_mb": 5002,
+    "min_idle": 53,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 4995,
+    "min_idle": 46,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [],
+  "t0": 1794207789.8532302,
+  "ramp_start": 1794207793.23,
+  "seconds": 382,
+  "generator_window_end": null
+ },
+ {
+  "run": "03-hold-17600",
+  "kind": "hold",
+  "users": 17600,
+  "ramp_s": 60,
+  "hold_s": 300,
+  "passed": true,
+  "why": null,
+  "alive": true,
+  "k6": {
+   "p95": 565.662200199998,
+   "p99": 1014.5220893800011,
+   "err": 0,
+   "rps": 1562.3943638709932,
+   "requests": 585939,
+   "created": 58738
+  },
+  "new_rows": 58741,
+  "box": {
+   "samples": 380,
+   "min_mem_avail_mb": 215.0,
+   "peak_app_mb": 579.0,
+   "peak_app_anon_mb": 416.0,
+   "peak_tcp": 17610.0,
+   "peak_conntrack": 0.0,
+   "mean_idle": 14.1,
+   "mean_steal": 8.3,
+   "mean_iowait": 3.0
+  },
+  "generators": [
+   {
+    "min_free_mb": 5146,
+    "min_idle": 58,
+    "busy_share": 0.0,
+    "limited": false
+   },
+   {
+    "min_free_mb": 5274,
+    "min_idle": 48,
+    "busy_share": 0.0,
+    "limited": false
+   }
+  ],
+  "steal_high": true,
+  "kernel": [],
+  "t0": 1794208173.9301705,
+  "ramp_start": 1794208176.444,
+  "seconds": 382,
+  "generator_window_end": null
+ }
+]

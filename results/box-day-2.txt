@@ -1,0 +1,18 @@
+date: 2026-11-09T05:24:52Z
+firewall: noufw
+6.8.0-147-generic
+CPU(s):                                  1
+Model name:                              DO-Regular
+BIOS Model name:                         pc-i440fx-6.1  CPU @ 2.0GHz
+Hypervisor vendor:                       KVM
+               total        used        free      shared  buff/cache   available
+Mem:             961         321         163           4         652         640
+Swap:              0           0           0
+/dev/vda1        24G  4.1G   20G  18% /
+conntrack_max: 8192
+tcp_mem: 10287	13719	20574
+somaxconn: 4096
+cpu:     events per second:   818.97
+disk fsync (what every SQLite commit waits for):
+    writes/s:                     5687.45
+    fsyncs/s:                     5687.50
